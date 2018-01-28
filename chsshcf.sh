@@ -1,24 +1,24 @@
 #!/bin/bash
-#  change_ssh_config.sh
-#  
-#  Copyright 2017 David Air <david@d2air.com>
-#  
+#  chsshcf.sh
+#
+#  Copyright 2017 David Air
+#
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
 #  the Free Software Foundation; either version 2 of the License, or
 #  (at your option) any later version.
-#  
+#
 #  This program is distributed in the hope that it will be useful,
 #  but WITHOUT ANY WARRANTY; without even the implied warranty of
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #  GNU General Public License for more details.
-#  
+#
 #  You should have received a copy of the GNU General Public License
 #  along with this program; if not, write to the Free Software
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
-#  
-# 
+#
+#
 # vérifier utilisateur ou droit root avec id -u = 0
 if [ "`id -u`" -eq 0 ]; then
 	#Jusqu'a ce que la reponse soit composée par un nombre entre 0 et 4, j'attends la saisie
@@ -33,8 +33,8 @@ if [ "`id -u`" -eq 0 ]; then
 			;;
 		1)
 			rm /etc/ssh/ssh_config
-			cp /etc/ssh/ssh_config.permissivefull /etc/ssh/ssh_config
-			echo "The ssh_config file is replaced with the template ssh_config.permissivefull"
+			cp /etc/ssh/ssh_config.fullpermissive /etc/ssh/ssh_config
+			echo "The ssh_config file is replaced with the template ssh_config.fullpermissive"
 			exit 0
 			;;
 		2)
@@ -62,4 +62,3 @@ else
 fi
 
 exit 0
-
