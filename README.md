@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # chsshcf
 A script to change and hardening its SSH configuration from templates
 (Un script pour changer et durcir sa configuration SSH d'après des modèles.)
@@ -17,5 +15,3 @@ It’s probably a good idea to test the changes with ssh -v
 Sources :
 https://stribika.github.io/2015/01/04/secure-secure-shell.html
 https://wiki.mozilla.org/Security/Guidelines/OpenSSH
-
->>>>>>> e6388eb033ab9b66493ec949688c5cdb9ea96bbd
