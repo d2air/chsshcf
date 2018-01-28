@@ -12,6 +12,6 @@ Just run ./install.sh in terminal as root
 
 It’s probably a good idea to test the changes with ssh -v
 
-Sources :
-https://stribika.github.io/2015/01/04/secure-secure-shell.html
-https://wiki.mozilla.org/Security/Guidelines/OpenSSH
+Sources:
+* https://stribika.github.io/2015/01/04/secure-secure-shell.html
+* https://wiki.mozilla.org/Security/Guidelines/OpenSSH
